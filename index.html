@@ -1,24 +1,110 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
-    <title>Colors and Hues</title>
-    <link rel="stylesheet" href="style.css">
-    
+<head>
+  <meta charset="utf-8">
+  <title>Sangitaa Muralidharan</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
 
-  </head>
-  <body> 
-      
-      
-    <canvas id="layer1" style="z-index: 0; position:absolute; left:0px; top:0px; width: 100%; height: 100%"></canvas>
-    <canvas id="layer2" style="z-index: 1; position:absolute; left:0px; top:0px; width: 100%; height: 100%"></canvas>
-   
-    <script src='fallingconfetti.js'></script> <!--I CHANGE THIS LINE-->
-    <script src='rotate.js'></script> <!--I CHANGE THIS LINE-->
+<body>
+
+    <a href="#"><img class="logo" src="Images/logo.png" alt="sangitaamuralidharan.in"></a> 
+
+    <div class="topnav">
+           
+        <a href="#">sketchbook</a>
+        <a href="#">passion</a>
+        <a href="#">hobbies</a>
+        <a href="#">home</a>
+        
+    </div>
     
+         <img id="0" class="image" src="images/backround.gif">
+         <img id="1" class="mainlogo" src="Images/symbol.png" alt="sunlogo">
+    
+         <p id=page1 >Hey guys, my name is Sangitaa. I’m 21 years old. I’m from a city called Chennai in India.  I am enrolled in the Advanced Diploma of Graphic Design at Humber College.<span id="dots">..</span><span id="more"> For as long as I can remember, I was known to have a different perspective and approach to life. I was a young girl struggling to find an efficient outlet for my creative mind and that is when I came across graphic design. I completed my first graphic designing course at the age of ten, and ever since, I have devoted my education and work to this field. Now I’m excited to learn something new from professionals and expand my knowledge!</span></p>
+         
+         <button onclick="myFunction()" id="button">Read more</button>
+
+    <script>
+            
+          function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("button");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } 
+          
+          else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+            
+    </script>
+
+    <section class="gallery">
+
+        <h1 id="one">Gallery</h1>
+
+        <div class="grid-container">
+        
+        <div class="grid-item">
+            <img class="image" src="Images/1.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/2.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/3.JPG">
+        </div>
+        
+        
+        <div class="grid-item">
+            <img class="image" src="Images/4.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/5.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/6.JPG">
+        </div>
+        
+        
+        <div class="grid-item">
+            <img class="image" src="Images/7.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/1.JPG">
+        </div>
+        
+        <div class="grid-item">
+            <img class="image" src="Images/2.JPG">
+        </div>
+        
+        </div>
+
+    </section>
+
+    <div class="footer">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
 
 </body>
+
 </html>
